@@ -6,37 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="assets/SVG IMAGE.svg">
     <title>MARTIAL ARTS INDIA</title>
 </head>
 
 <body>
 
-    <div class="container">
+    <nav class="nav-container" id="navbar">
+    <div class="nav-content">
+      <a href="/" class="site-brand">
+        <img class="site-icon" src="assets/SVG IMAGE.svg" alt="site icon"> <!-- width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> -->
+          <!-- <path d="M6 19V5c0-1.1.9-2 2-2h8a2 2 0 0 1 2 2v14H6Z"></path>
+          <path d="M12 12h.01"></path>
+          <path d="M11 6h2"></path>
+          <path d="M6 19v2"></path>
+          <path d="M18 19v2"></path> -->
+        <span class="site-name">MARTIAL ARTS INDIA</span>
+      </a>
+      <div class="nav-links">
+        <a href="/" class="nav-link">Home</a>
+        <a href="/members" class="nav-link">Members</a>
+        <a href="/join" class="nav-link join-us">Join Us</a>
+      </div>
+    </div>
+  </nav>
+
+  <script>
+    let lastScroll = 0;
+    const navbar = document.getElementById('navbar');
+    const scrollThreshold = 50; // Minimum scroll before hiding
+
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.pageYOffset;
+      
+      // Only hide nav when scrolling down and past threshold
+      if (currentScroll > lastScroll && currentScroll > scrollThreshold) {
+        navbar.classList.add('nav-hidden');
+      } else {
+        navbar.classList.remove('nav-hidden');
+      }
+      
+      lastScroll = currentScroll;
+    });
+  </script>
+
+     <div class="container">
         <header>
-            <div class="category">HOME</div>
+            <div class="category"></div> 
             <div class="info">
-                <!-- <div class="tags">
-                    <i class="fa-solid fa-tag"></i>
-                    <span>Coding, Programming</span>
-                </div> -->
                 <h1 class="title">WELCOME!</h1>
                 <p class="subtitle1">TO THE HOME PAGE OF </p> <p class="subtitle2">MARTIAL ARTS IN INDIA</p>
             </div>
-        </header>
-        <!-- <section class="details">
-            <div class="item">
-                <h5 class="item-title">Reading Time</h5>
-                <p class="item-text"><span class="item-data">3</span> Mins</p>
-            </div>
-            <div class="item">
-                <h5 class="item-title">Publish Date</h5>
-                <p class="item-text"><span class="item-data">May 27, 2023</span></p>
-            </div>
-            <div class="item">
-                <h5 class="item-title">View</h5>
-                <p class="item-text"><span class="item-data">12.7K</span> Views</p>
-            </div>
-        </section> -->
+        </header> 
+
+
         <article>
             <h1>TOP MARTIAL ART FORMS IN INDIA</h1>
             <h4>1. KARATE </h4>
@@ -124,7 +147,7 @@
     </div> -->
     <section class="contact-section">
         <div class="image-block">
-            <img src="kick.jpg" alt="Contact Us">
+            <img src="assets\kick.jpg" alt="Contact Us">
         </div>
         <div class="contact-block">
             <div class="contact-content">

@@ -123,8 +123,8 @@
   }
 
 
-body .container header{
-    background: url('assets/bg.jpg') center / cover no-repeat;
+ body .container header{
+    background: url('assets/bg-kick.jpg') center / cover no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -198,7 +198,7 @@ body .container {
 }
 
 body .container header {
-    background: url('assets/bg.jpg') center / cover no-repeat;
+    background: url('assets/bg-kick.jpg') top / cover no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -302,6 +302,7 @@ body article p {
     color: #000000c5;
     font-size: 1.1rem;
 }
+
 
 body article blockquote {
     margin: 40px 0;
@@ -536,7 +537,7 @@ body {
     text-align: center;
     margin-top: 40px;
     padding-top: 20px;
-    border-top: 1px solid #34495e;
+    border-top: 1px solid #26405a;
 }
 
 .footer-bottom p {
@@ -588,7 +589,7 @@ body .container header .info .subtitle2{
 body .details{
     display: flex;
     justify-content: space-between;
-    background: rgba(0, 0, 0, 0.14);
+    background: rgba(0, 0, 0, 0.151);
     margin-top: 50px;
     padding: 20px 50px;
     border-radius: 16px;
